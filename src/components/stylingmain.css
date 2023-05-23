@@ -1,0 +1,92 @@
+/* stylingmain.css */
+
+/* Top bar */
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1d3557; /* Darker blue */
+  color: white;
+  height: 110px;
+  font-size: 1.2rem;
+  position: fixed; /* Keeps the bar aligned to the top */
+  top: 0;
+  width: 100%; /* Make the bar span the full width */
+  z-index: 1; /* Ensures the bar is in front of other content */
+}
+
+.navButton {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+  background-color: transparent; /* Remove background color */
+  border: none; /* Remove border */
+  padding: 0; /* Remove padding */
+  cursor: pointer; /* Add cursor */
+}
+
+.activeNavButton {
+  background-color: white;
+  color: #1d3557; /* Darker blue */
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/* Main content */
+.HomePage,
+.ContactsPage,
+.HelpPage,
+.viewpage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: white;
+  color: #1d3557; /* Darker blue */
+  margin-top: 50px; /* Push the content below the top bar */
+}
+
+.mainContent {
+  width: 80%;
+  margin: 20px;
+  text-align: center;
+}
+
+.contactCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contactCard {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.contactCard h2 {
+  margin-top: 0;
+}
+
+/* Contacts */
+.ContactsPage h1 {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.activeNavButton {
+  background-color: white;
+  color: #1d3557; /* Darker blue */
+  border-radius: 1000px;
+  padding: 60px; 
+  }
+
+  .viewpage {
+  display: flex;  
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  }
